@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 const mongo_url = "mongodb+srv://dbUser:db12User3456@cluster0.4yriq.mongodb.net/test?retryWrites=true&w=majority"
 
 mongoose.connect(mongo_url);
-const port = 80;
+const port = process.env.PORT || 80;
 
 mongoose.connect(mongo_url)
     .then(()=> {
