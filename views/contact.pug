@@ -1,0 +1,54 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+  style
+      include ../static/style.css
+      include ../static/style-contact.css
+
+block content
+    <div class="div">
+
+        //- <h1>hello boy! #{content}</h1>
+        //- | #{content}
+        //-  this is plain html using pug 
+
+        <h1>Get This GYM membership only at 60$ - hurry up!</h1>
+        <h4>Usefull For Dance </h4>
+    </div>
+
+    <form action="/contact" method="post" class="form" id="gym">
+        <h3>User Information</h3>
+        <input type="text" name="name" id="name" placeholder="enter your name" required>
+        <br>
+
+        <input type="number" name="age" id="age" placeholder="enter your age" required>
+        <br>
+
+        <input type="text" name="gender" id="gender" placeholder="gender" required>
+        <br>
+        <textarea name="address" id="address" cols="30" rows="10" placeholder="enter your address"></textarea>
+        <textarea name="more" id="more" cols="30" rows="10" placeholder="more about you!"></textarea>
+        <h3>Payment Infomation</h3>
+        <p>Card Type :
+            <select name="card" id="card" required>
+                <option value="">--Select A Card Type--</option>
+                <option value="Master Card">Master Card</option>
+                <option value="Rupay">Rupay</option>
+                <option value="SBI">SBI</option>
+                <option value="ICIC">ICIC</option>
+
+            </select>
+        </p>
+
+        <p>Card Number : *<input type="number" name="card_number" id="card_number" required placeholder="number"></p>
+        <p>Card Expiration Date : *<input type="date" name="exp_date" id="exp_data" required placeholder="date"></p>
+
+        <p>Card CVV : *<input type="password" name="CVV" id="CVV" required placeholder="****"></p>
+
+
+
+        <button class="btn">Submit</button>
+    </form>

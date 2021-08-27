@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+*{
+    margin: 0px;;
+    box-sizing: border-box;
+    padding: 0px;
+    /* font-family: Parmanant Marker; */
+    font-size: 20px;
+}
+#logo{
+    display: flex;
+    color: blanchedalmond;
+    align-items: center;
+    font-size: 20px;
+    font-size: 16px;
+    margin: 4px 30px;
+
+}
+#logo img{
+    height: 30px;
+    filter: invert();
+
+}
+#navbar{
+    background-color: rgb(212, 14, 14);
+    padding: 7px 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    /* align-items: center; */
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    
+    
+    
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0px 195px 0px 0px;
+    font-family: Yanone Kaffeesatz !important;
+    
+}
+#navbar li a{
+    text-decoration: none;
+    
+    color: white;
+}
+#navbar li a:hover{
+    text-decoration: none;
+    color: rgba(5, 5, 5, 0.979);
+    font-weight: bold;
+    /* font-size: 22px; */
+}
+
+#introsection {
+    height: 350px;
+    width: 100%;
+    color: #fbff00f2;
+    display: flex;
+    flex-direction: column;
+    font-family: Oswald;
+    font-style: italic;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 50px;
+    background-color: rgb(202, 190, 175);
+    background: url("/static/img/dance_song.jpg") no-repeat center center;
+    background-size: cover;
+
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    background-attachment: fixed;
+
+}
+#introsection div{
+    padding: 8px 14px;
+    font-size: 40px;
+}
+#introsection div.small{
+    padding: 8px 14px;
+    font-size: 30px;
+}
+
+
+#mission{
+    height: 400px;
+    width: 100%;
+    color: rgb(253, 252, 250);
+    /* display: block; */
+    background-color: rgba(245, 240, 240, 0.911);
+    font-family: Yeon Sung;
+    background: url("/static/img/dance5.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+       
+}
+#mission h2{
+    text-align: center;
+    padding-top: 12px;
+    padding: 45px;
+    font-weight: bold;
+    font-size: 1rem;   
+}
+
+.card{
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 32%;
+    margin: 6px ;
+    height: 216px;
+    background: url("/static/img/dance.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+/* #card1{
+    background: url("/static/d1.png") no-repeat center center;
+    background-size: cover;
+}
+#card2{
+    background: url("/static/d2.jpg") no-repeat center center;
+    background-size: cover;
+}
+#card3{
+    background: url("/static/d3.jpg") no-repeat center center;
+    background-size: cover;
+} */
+.card h3{
+    text-align: center;
+    margin: 21px;
+
+}
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.card-img {
+    height: 127px;
+    padding: 0px 14px;
+}
+.card-img img{
+    height: inherit;
+    padding: 0px 14px;
+}
+.card-content p{
+    font-size: 25px;
+    padding: 0px;
+}
+
+#sponsersection{
+    height: 400px;
+    width: 100%;
+    /* background-color: rgba(231, 165, 165, 0.911); */
+    font-family: Yeon Sung;
+    background: url("/static/img/sponser.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+       
+}
+#sponsersection h2{
+    text-align: center;
+    padding: 34px;
+font-size: 33px;
+ }  
+
+#sponser{
+    height: 328px;
+    max-width: 1327px;
+    margin: auto;
+}
+#sponser img{
+    height: 40%;
+    margin: 27px;
+}
+#footer{
+    
+    height: 60px;
+    width: 100;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: rgb(255, 255, 255);
+    /* text-decoration: none; */
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: Yeon Sung ;
+
+
+}

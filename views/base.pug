@@ -1,0 +1,21 @@
+doctype html
+html 
+    head
+        title this is base page
+        block scripts 
+        block style
+
+    body
+        nav#navbar.top.first
+            ul
+                div#logo
+                    img(src="/static/img/logo.png", alt="image", srcset="")
+                    | HDA
+                li #[a(href="/") Home] 
+                li #[a(href="/") About]
+                li #[a(href="/contact") Contact]
+                li #[a(href="/") More]
+                li #[a(href="/") Login/signup]
+        block content 
+        footer#footer 
+            | Copyright © 2019 shashiAcedemy.com | All rights reserved          

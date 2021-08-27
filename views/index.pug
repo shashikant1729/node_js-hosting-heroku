@@ -1,0 +1,58 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top.first
+      ul
+        div#logo
+          img(src="/static/img/logo.png", alt="image", srcset="")
+          | HDA
+        li #[a(href="/") Home] 
+        li #[a(href="/") About]
+        li #[a(href="/") Contact]
+        li #[a(href="/") More]
+        li #[a(href="/") Login/signup]
+    section#introsection 
+       
+      div  Welcome To Shashi Kant's Dance Acedemy
+      div.small  Eat Dance Sleep Repeat
+    section#mission 
+      h2 Our Missions
+      div.card#card1
+        h3  Dance Perfection
+        div.card-box
+          div.card-img
+            img(src="/static/img/d1.png", alt="image", srcset="")
+          div.card-content
+            p this is the best dance club in thw world  
+      div.card#card2
+        h3 Dance The Way You Like
+        div.card-box
+          div.card-img
+            img(src="/static/img/d2.png", alt="image", srcset="")
+          div.card-content
+            p this is the best dance club in thw world 
+      div.card#card3
+        h3 Expert Teaching
+        div.card-box
+          div.card-img
+            img(src="/static/img/d3.png", alt="image", srcset="")
+          div.card-content
+            p this is the best dance club in the world 
+
+    section#sponsersection  
+      h2 Our Sponser
+      div#sponser
+        img(src="/static/img/microsoft.png", alt="image", srcset="") 
+        img(src="/static/img/skpye.png", alt="image", srcset="") 
+        img(src="/static/img/hp.png", alt="image", srcset="") 
+        img(src="/static/img/dell.png", alt="image", srcset="") 
+        img(src="/static/img/apple.png", alt="image", srcset="") 
+    footer#footer 
+      | Copyright © 2019 shashiAcedemy.com | All rights reserved  
+
+    script
+      include ../static/index.js

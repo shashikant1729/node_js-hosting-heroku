@@ -1,0 +1,13 @@
+.div{
+    height:415px;
+    width: 100%;
+    justify-items: center;
+}
+
+h3, h4{
+    text-align: center;
+    color: blueviolet;
+    text-shadow: brown;
+    margin: 100px auto;
+
+}
